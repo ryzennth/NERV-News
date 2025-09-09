@@ -8,6 +8,7 @@ use App\Http\Controllers\{
 use Illuminate\Support\Facades\Route;
 
 // Homepage & Public Article Access
+
 Route::get('/', [ArticleController::class, 'index'])->name('home');
 Route::get('/articles', [ArticleController::class, 'index'])->name('articles.index');
 Route::get('/article/{slug}', [ArticleController::class, 'show'])->name('articles.show');
